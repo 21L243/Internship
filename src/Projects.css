@@ -1,0 +1,70 @@
+.project h1{
+    color:white;
+    font-weight: bold;
+    background-color:  rgb(61, 121, 167);
+    text-align: center;
+    border: 2px solid white;
+    position: relative;
+    bottom:-20px;
+    animation: fadeInHeading 1.5s ease-in-out forwards;
+}
+.project1 h2{
+    text-align: center;
+    color: rgb(61, 121, 167);
+    font-weight: bold;
+    position: relative;
+    bottom:-30px;
+    animation: fadeInHeading 1.5s ease-in-out forwards;
+}
+.project2 p{
+    text-align: center;
+    color:aqua;
+    font-weight: bold;
+    position: relative;
+    bottom:-30px;
+    animation: fadeInHeading 1.5s ease-in-out forwards;
+}
+.project3 p{
+    text-align: justify;
+    color:white;
+    position: relative;
+    bottom:-30px;
+    animation: fadeInHeading 1.5s ease-in-out forwards;
+    width:900px;
+    position: relative;
+    right:-340px;
+
+}
+@media screen  and (max-width: 767px) {
+
+    .project3 p{
+        text-align: justify;
+        color:white;
+        position: relative;
+        bottom:-30px;
+        animation: fadeInHeading 1.5s ease-in-out forwards;
+        width:350px;
+        position: relative;
+        right:-25px;
+        font-size: 12px;
+    
+    }
+    .project1 h2{
+        text-align: center;
+        color: rgb(61, 121, 167);
+        font-weight: bold;
+        position: relative;
+        bottom:-30px;
+        font-size: 17px;
+        animation: fadeInHeading 1.5s ease-in-out forwards;
+    }
+    .project2 p{
+        text-align: center;
+        color:aqua;
+        font-weight: bold;
+        position: relative;
+        bottom:-30px;
+        font-size: 13px;
+        animation: fadeInHeading 1.5s ease-in-out forwards;
+    }
+  }

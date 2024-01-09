@@ -1,0 +1,85 @@
+.Skillsss h1{
+    color:white;
+    position: relative;
+    text-align: center;
+    bottom:-10px;
+    font-weight: bold;
+    border:2px solid white;
+    background-color:rgb(61, 121, 167);
+    animation: fadeInHeading 1.5s ease-in-out forwards;
+}
+.Skill1 li{
+    color:white;
+    position: relative;
+    text-align: justify;
+    right:-630px;
+    bottom:-20px;
+    padding-bottom:10px;
+    font-size: 20px;
+    animation: fadeInHeading 1.5s ease-in-out forwards;
+}
+.Skill3 h1{
+    color:white;
+    position: relative;
+    text-align: center;
+    bottom:-17px;
+    font-weight: bold;
+    border:2px solid white;
+    background-color:rgb(61, 121, 167);
+    animation: fadeInHeading 1.5s ease-in-out forwards;
+  
+}
+.Skill2 li{
+    color:white;
+    position: relative;
+    text-align: justify;
+    right:-630px;
+    bottom:-20px;
+    padding-bottom:10px;
+    font-size: 20px;
+    animation: fadeInHeading 1.5s ease-in-out forwards;
+}
+@keyframes fadeInHeading {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media screen and (max-width: 767px) {
+    .Skillsss h1,
+    .Skill3 h1 {
+        bottom: -25px; /* Adjust as needed for positioning */
+    }
+
+    .Skill1 li,
+    .Skill2 li {
+        right:-20px; /* Remove the right positioning */
+        text-align:justify; /* Center the text */
+        bottom: -30px; /* Adjust as needed for positioning */
+        padding-bottom: 10px;
+    
+    }
+}
+@media screen  and (min-width: 360px ) and (max-width:380px) {
+
+    .Skillsss h1,
+    .Skill3 h1 {
+        bottom: -25px;
+        font-size: 20px; /* Adjust as needed for positioning */
+    }
+
+    .Skill1 li,
+    .Skill2 li {
+        right:-20px; /* Remove the right positioning */
+        text-align:justify; /* Center the text */
+        bottom: -30px; /* Adjust as needed for positioning */
+        padding-bottom: 10px;
+        font-size: 10px;
+    
+    }
+  }
+  

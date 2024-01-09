@@ -1,0 +1,49 @@
+.school h1{
+    color:white;
+    font-weight: bold;
+    background-color:  rgb(61, 121, 167);
+    text-align: center;
+    border: 2px solid white;
+    position: relative;
+    bottom:-20px;
+    animation: fadeInHeading 1.5s ease-in-out forwards;
+}
+.school1 h3{
+    text-align: center;
+    color: rgb(61, 121, 167);
+    font-weight: bold;
+    position: relative;
+    bottom:-30px;
+    animation: fadeInHeading 1.5s ease-in-out forwards;
+}
+.school2 p{
+    text-align: center;
+    color:white;
+    position: relative;
+    bottom:-30px;
+    animation: fadeInHeading 1.5s ease-in-out forwards;
+}
+.school3 p{
+    text-align: center;
+    color:rgb(16, 229, 245);
+    position: relative;
+    bottom:-30px;
+    animation: fadeInHeading 1.5s ease-in-out forwards;
+}
+.school4 p{
+    text-align: center;
+    color:white;
+    position: relative;
+    bottom:-30px;
+    animation: fadeInHeading 1.5s ease-in-out forwards;
+}
+@keyframes fadeInHeading {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

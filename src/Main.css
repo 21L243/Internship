@@ -1,0 +1,303 @@
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-image: url("https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-01.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+}
+.container-fluid{
+    background-color:#131415;
+    padding: 20px;
+    border: 10px solid  rgb(61, 121, 167);
+}
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active {
+  color:rgb(61, 121, 167);
+  }
+.navbar-brand {
+  font-size: 30px;
+  font-weight: bold;
+  color:#e7ebec;
+  text-decoration: none;
+}
+.navbar-nav {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  position: relative;
+  right:-300px;
+  padding-right: 45px;
+}
+a{
+  text-decoration: none;
+}
+
+.nav-link {
+  color: #eceded;;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight: 900;
+}
+
+.navbar-toggler-icon{
+   background-color:rgb(61, 121, 167);
+}
+.navbar-toggler{
+  color: #fff;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus,
+.navbar-brand:active {
+  color: #e0e4e5; 
+
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color:#101012;
+  min-width: 120px;
+  z-index: 1;
+}
+
+.dropdown-item {
+  padding: 8px 12px;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+.img-container img{
+    position: relative;
+    right:-140px;
+    bottom:-80px;
+   border-radius: 50%;
+   border: 5px solid rgb(61, 121, 167);
+   box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+  }
+
+
+.first-text {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 0.08em solid #eaefef;
+    margin: 0;
+    color:#e6eef0;
+    letter-spacing: 0.01em;
+    font-size: 35px;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:900;
+    position: relative;
+    top:-215px;
+   right:-520px;
+    animation: typingFirst 3s steps(40, end), fadeIn 1s ease-in-out forwards;
+  }
+  
+  @keyframes typingFirst {
+    from {
+      width: 0;
+    }
+    to {
+      width: 33%;
+    }
+  }
+
+.second-text p {
+    color: rgb(61, 121, 167);
+    position: relative;
+    top:-185px;
+    right:-520px;
+    font-size: 35px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:bold;
+  }
+
+.icon a {
+  font-size: 50px; 
+  text-decoration: none;
+  padding: 15px;
+  position: relative;
+  top:-170px;
+  right:-510px;
+}
+
+
+
+
+.fa-envelope {
+  color :rgb(239, 243, 245);
+}
+.fa-envelope:hover {
+  opacity: 0.8; 
+}
+
+.fa-phone {
+  color:white; 
+}
+.fa-phone:hover {
+  opacity: 0.8; 
+}
+
+.fa-linkedin {
+  color:white;
+}
+.fa-linkedin:hover {
+  opacity: 0.8; 
+}
+.fa-file-alt{
+  color:white
+}
+.fa-file-alt:hover{
+  opacity: 0.8;
+}
+
+/* Your existing CSS... */
+
+/* Media query for Samsung Galaxy S8+ */
+
+@media screen and (max-width: 767px) {
+  .navbar-nav {
+    justify-content: center; /* Center align the navigation items */
+    margin-top: 20px; /* Add space at the top */
+  }
+  .navbar-toggler {
+    z-index: 1000; /* Ensure toggler is above other elements */
+    position: relative; /* Adjust positioning */
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    top: 100%; /* Position dropdown menu below navbar */
+    left: 0;
+    z-index: 999; /* Ensure it's above other content */
+    background-color: #131415; /* Adjust background color */
+    width: 100%; /* Take full width */
+    display: none; /* Hide by default */
+  }
+
+  .navbar-collapse.show {
+    display: block; /* Show when toggled */
+  }
+
+  .nav-item {
+    position: static;
+    margin-bottom: 10px; /* Adjust spacing between navigation items */
+    text-align: center;
+  }
+
+  .first-text
+   {
+    text-align: center; /* Center align text */
+    position: relative;
+    top: -380px;
+    right: auto;
+    margin: 10px 0; /* Add margin for spacing */
+    font-size: 20px; /* Adjust font size for smaller screens */
+    opacity: 0; 
+    border-right:none;
+    animation: slideFromRight 1s ease-in-out forwards;
+  }
+  @keyframes slideFromRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  .icon a {
+    text-align: center; /* Center align text */
+    position:relative;
+    top: 30px;
+    right: -90px;
+    opacity: 0; /* Initially hide the elements */
+    animation: slideFromRight 1s ease-in-out forwards;
+    margin: 10px 0; /* Add margin for spacing */
+    font-size: 30px; /* Adjust font size for smaller screens */
+  }
+  .second-text p
+  {
+   text-align: center; /* Center align text */
+   position:relative;
+   top: -370px;
+   right: auto;
+   opacity: 0; /* Initially hide the elements */
+   animation: slideFromRight 1s ease-in-out forwards;
+   margin: 10px 0; /* Add margin for spacing */
+   font-size: 20px; /* Adjust font size for smaller screens */
+ }
+
+  .img-container img {
+    right: -50px;
+    bottom:-150px;
+    margin: 20px auto; /* Center the image */
+    opacity: 0; /* Initially hide the elements */
+    animation: slideFromRight 1s ease-in-out forwards;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .navbar-nav {
+    justify-content: flex-end; /* Reset justify-content for larger screens */
+    margin-top: 0; /* Reset margin */
+  }
+  .navbar-toggler {
+    z-index: 1000; /* Ensure toggler is above other elements */
+    position: relative; /* Adjust positioning */
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    top: 100%; /* Position dropdown menu below navbar */
+    left: 0;
+    z-index: 999; /* Ensure it's above other content */
+    background-color: #131415; /* Adjust background color */
+    width: 100%; /* Take full width */
+    display: none; /* Hide by default */
+  }
+
+  .navbar-collapse.show {
+    display: block; /* Show when toggled */
+  }
+
+
+  .nav-item {
+    position: static;
+    padding-right: 20px; /* Adjust spacing between navigation items */
+  }
+
+  .first-text,
+  .second-text p,
+  .icon a {
+    text-align: right; /* Align text to the right */
+    font-size: 25px; /* Adjust font size for larger screens */
+  }
+
+  .img-container img {
+    right: -60px; /* Adjust image position */
+    bottom: -30px;
+  }
+}
+  
+  
+  
+  
+  

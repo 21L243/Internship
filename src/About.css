@@ -1,0 +1,116 @@
+/* General styles */
+
+.about_me h1 {
+  color:white;
+    position: relative;
+    text-align: center;
+    bottom:-10px;
+    font-weight: bold;
+    border:2px solid white;
+    background-color:rgb(61, 121, 167);
+    animation: fadeInHeading 1.5s ease-in-out forwards;
+}
+
+.about {
+  margin: 20px;
+}
+
+.about p {
+  line-height: 1.6;
+  font-size: 21px;
+  text-align: justify;
+  color: white;
+    padding: 10px;
+  max-width: 100%; /* Ensures responsiveness */
+  margin: 0 auto; /* Center the paragraph */
+}
+
+.about_me h1 {
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeInHeading 1.5s ease-in-out forwards;
+  font-weight: bolder;
+  text-align: center;
+}
+
+@keyframes fadeInHeading {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.about p {
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeSlideInParagraph 1.5s ease-in-out forwards;
+  color: #f3f8fa;
+  font-weight: 400;
+}
+
+@keyframes fadeSlideInParagraph {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media screen and (min-width: 1024px) {
+
+  .about_me h1
+ {
+    text-align: center; /* Center the text */
+    font-size: 50px;
+  }
+  .about p {
+    text-align: center; /* Center the text */
+    font-size: 20px;
+    text-align: justify;
+  }
+}
+
+@media screen  and (max-width: 767px) {
+
+  .about_me h1
+ {
+    text-align: center; /* Center the text */
+    font-size: 30px;
+  }
+  .about p {
+    text-align: center; /* Center the text */
+    font-size: 13px;
+    text-align: justify;
+  }
+}
+@media screen  and (min-width: 375px ) and (max-width:380px) {
+
+  .about_me h1
+ {
+    text-align: center; /* Center the text */
+    font-size: 30px;
+  }
+  .about p {
+    text-align: center; /* Center the text */
+    font-size: 10px;
+    text-align: justify;
+  }
+}
+@media screen  and (min-width: 360px ) and (max-width:380px) {
+
+  .about_me h1
+ {
+    text-align: center; /* Center the text */
+    font-size: 30px;
+  }
+  .about p {
+    text-align: center; /* Center the text */
+    font-size: 10px;
+    text-align: justify;
+  }
+}
