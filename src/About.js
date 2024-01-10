@@ -29,9 +29,10 @@ function About() {
         <li class="nav-item">
           <a class="nav-link" href="#">Certifications</a>
         </li></Link>
+        <Link to="/projects">
         <li class="nav-item">
           <a class="nav-link" href="#">Projects</a>
-        </li>
+        </li></Link>
         <Link to="/internship">        
         <li class="nav-item">
           <a class="nav-link" href="#">Internships</a>

@@ -44,14 +44,18 @@ function Certification() {
 <div class="ram"><h1>Certifications</h1></div>
 <div class="ram1"><h3>NPTEL</h3></div>
 <div class="ram2">
-    <li>Introduction To Programming In C <a href="https://drive.google.com/file/d/1WfklELCabGq0bT75IhQyiLeZj5TFIjRi/view?usp=sharing "class="fas fa-eye"></a></li>
-     <li>Soft Skill Development <a href="https://drive.google.com/file/d/128Zut6KbG0CZOt4lKPaz2xRoDZgtYits/view?usp=sharing"class="fas fa-eye"></a></li>
-     <li>Programming In Java <a href="https://drive.google.com/file/d/1IwLNoksMCQXrdtLKDiiIZixeghZHXfNa/view?usp=sharing"class="fas fa-eye"></a></li>
-    </div>
+  <p>
+    <li>Introduction To Programming In C  <a href="https://drive.google.com/file/d/1WfklELCabGq0bT75IhQyiLeZj5TFIjRi/view?usp=sharing" class="fas fa-eye"></a></li>
+    <li>Soft Skill Development  <a href="https://drive.google.com/file/d/128Zut6KbG0CZOt4lKPaz2xRoDZgtYits/view?usp=sharing" class="fas fa-eye"></a></li>
+    <li>Programming In Java  <a href="https://drive.google.com/file/d/1IwLNoksMCQXrdtLKDiiIZixeghZHXfNa/view?usp=sharing" class="fas fa-eye"></a></li>
+  </p>
+</div>
+
     <div class="ram3"><h3>HackerRank</h3></div>
 <div class="ram4">
+  <p>
     <li>JavaScript Basic <a href="https://drive.google.com/file/d/19eoJxLYocWzXZG0eqQV-4JFttdMisV_B/view?usp=sharing" class="fas fa-eye"></a></li>
-     <li>Java Basic <a href="https://drive.google.com/file/d/1LbbgiRh4VuvALtfDwzxLo6Z-AgxNGdPY/view?usp=sharing"class="fas fa-eye"> </a></li>
+     <li>Java Basic <a href="https://drive.google.com/file/d/1LbbgiRh4VuvALtfDwzxLo6Z-AgxNGdPY/view?usp=sharing"class="fas fa-eye"> </a></li></p>
     </div>
     
 </>
