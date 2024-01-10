@@ -127,7 +127,7 @@ a{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight:bold;
   }
-
+ 
 .icon a {
   font-size: 50px; 
   text-decoration: none;
@@ -201,105 +201,35 @@ a{
     text-align: center;
   }
 
-  .first-text
-   {
-    text-align: center; /* Center align text */
-    position: relative;
-    top: -380px;
-    right: auto;
-    margin: 10px 0; /* Add margin for spacing */
-    font-size: 20px; /* Adjust font size for smaller screens */
-    opacity: 0; 
-    border-right:none;
-    animation: slideFromRight 1s ease-in-out forwards;
-  }
-  @keyframes slideFromRight {
-    from {
-      transform: translateX(100%);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-  .icon a {
-    text-align: center; /* Center align text */
-    position:relative;
-    top: 30px;
-    right: -90px;
-    opacity: 0; /* Initially hide the elements */
-    animation: slideFromRight 1s ease-in-out forwards;
-    margin: 10px 0; /* Add margin for spacing */
-    font-size: 30px; /* Adjust font size for smaller screens */
-  }
-  .second-text p
-  {
-   text-align: center; /* Center align text */
-   position:relative;
-   top: -370px;
-   right: auto;
-   opacity: 0; /* Initially hide the elements */
-   animation: slideFromRight 1s ease-in-out forwards;
-   margin: 10px 0; /* Add margin for spacing */
-   font-size: 20px; /* Adjust font size for smaller screens */
- }
-
-  .img-container img {
-    right: -50px;
-    bottom:-150px;
-    margin: 20px auto; /* Center the image */
-    opacity: 0; /* Initially hide the elements */
-    animation: slideFromRight 1s ease-in-out forwards;
-  }
-}
-
-@media screen  and (max-width: 767px) {
-    .navbar-nav {
-    justify-content: flex-end; /* Reset justify-content for larger screens */
-    margin-top: 0; /* Reset margin */
-  }
-  .navbar-toggler {
-    z-index: 1000; /* Ensure toggler is above other elements */
-    position: relative; /* Adjust positioning */
-  }
-
-  .navbar-collapse {
-    position: absolute;
-    top: 100%; /* Position dropdown menu below navbar */
-    left: 0;
-    z-index: 999; /* Ensure it's above other content */
-    background-color: #131415; /* Adjust background color */
-    width: 100%; /* Take full width */
-    display: none; /* Hide by default */
-  }
-
-  .navbar-collapse.show {
-    display: block; /* Show when toggled */
-  }
-
-
-  .nav-item {
-    position: static;
-    padding-right: 20px; /* Adjust spacing between navigation items */
-  }
-
   .first-text,
   .second-text p {
-    text-align: center; /* Align text to the right */
-    font-size: 22px; /* Adjust font size for larger screens */
+    text-align: center; /* Center text for smaller screens */
+    font-size: 20px; /* Adjust font size for smaller screens */
+    left:10px;
+    border-right: none;
+    animation: none;
+    animation: fadeSlideInParagraph 1.5s ease-in-out forwards;
   }
-
+  .icon a {
+    font-size: 30px; /* Adjust icon size for smaller screens */
+    padding: 10px; /* Adjust padding around icons */
+    left:120px;
+    position: relative;
+    top:150px;/* Adjust spacing between icons */
+    animation: fadeSlideInParagraph 1.5s ease-in-out forwards;
+  }
   .img-container img {
-    right: -60px; /* Adjust image position */
-    bottom: -170px;
+    width: 200px; /* Adjust image size for smaller screens */
+   position: relative; /* Reset margin */
+   bottom:-200px;
+   left:100px;
+   animation: fadeSlideInParagraph 1.5s ease-in-out forwards;
   }
 }
 @media screen  and (min-width: 375px ) and (max-width:380px) {
-
   .navbar-nav {
-    justify-content: flex-end; /* Reset justify-content for larger screens */
-    margin-top: 0; /* Reset margin */
+    justify-content: center; /* Center align the navigation items */
+    margin-top: 20px; /* Add space at the top */
   }
   .navbar-toggler {
     z-index: 1000; /* Ensure toggler is above other elements */
@@ -320,37 +250,41 @@ a{
     display: block; /* Show when toggled */
   }
 
-
   .nav-item {
     position: static;
-    padding-right: 20px; /* Adjust spacing between navigation items */
+    margin-bottom: 10px; /* Adjust spacing between navigation items */
+    text-align: center;
   }
 
   .first-text,
   .second-text p {
+    text-align: center; /* Center text for smaller screens */
+    font-size: 13px; /* Adjust font size for smaller screens */
+    left:10px;
+    border-right: none;
+    animation: none;
+    animation: fadeSlideInParagraph 1.5s ease-in-out forwards;
+  }
+  .icon a {
+    font-size: 30px; /* Adjust icon size for smaller screens */
+    padding: 10px; /* Adjust padding around icons */
+    left:110px;
     position: relative;
-    text-align: center; /* Align text to the right */
-    font-size: 18px; /* Adjust font size for larger screens */
-    top:-320px;
+    top:110px;/* Adjust spacing between icons */
+    animation: fadeSlideInParagraph 1.5s ease-in-out forwards;
   }
-  .icon a{
-     position: relative;
-     top:-25px;
-     left:70px;
-  }
-
   .img-container img {
-    right: -80px; /* Adjust image position */
-    bottom: -100px;
-    width:220px;
+    width: 200px; /* Adjust image size for smaller screens */
+   position: relative; /* Reset margin */
+   bottom:-120px;
+   left:100px;
+   animation: fadeSlideInParagraph 1.5s ease-in-out forwards;
   }
 }
-  
 @media screen  and (min-width: 360px ) and (max-width:380px) {
-
   .navbar-nav {
-    justify-content: flex-end; /* Reset justify-content for larger screens */
-    margin-top: 0; /* Reset margin */
+    justify-content: center; /* Center align the navigation items */
+    margin-top: 20px; /* Add space at the top */
   }
   .navbar-toggler {
     z-index: 1000; /* Ensure toggler is above other elements */
@@ -371,32 +305,34 @@ a{
     display: block; /* Show when toggled */
   }
 
-
   .nav-item {
     position: static;
-    padding-right: 20px; /* Adjust spacing between navigation items */
+    margin-bottom: 10px; /* Adjust spacing between navigation items */
+    text-align: center;
   }
 
   .first-text,
   .second-text p {
+    text-align: center; /* Center text for smaller screens */
+    font-size: 13px; /* Adjust font size for smaller screens */
+    left:10px;
+    border-right: none;
+    animation: none;
+    animation: fadeSlideInParagraph 1.5s ease-in-out forwards;
+  }
+  .icon a {
+    font-size: 30px; /* Adjust icon size for smaller screens */
+    padding: 10px; /* Adjust padding around icons */
+    left:110px;
     position: relative;
-    text-align: center; /* Align text to the right */
-    font-size: 18px; /* Adjust font size for larger screens */
-    top:-320px;
+    top:110px;/* Adjust spacing between icons */
+    animation: fadeSlideInParagraph 1.5s ease-in-out forwards;
   }
-  .icon a{
-     position: relative;
-     top:-25px;
-     left:70px;
-  }
-
   .img-container img {
-    right: -80px; /* Adjust image position */
-    bottom: -100px;
-    width:220px;
+    width: 200px; /* Adjust image size for smaller screens */
+   position: relative; /* Reset margin */
+   bottom:-120px;
+   left:100px;
+   animation: fadeSlideInParagraph 1.5s ease-in-out forwards;
   }
 }
-  
-  
-  
-  
