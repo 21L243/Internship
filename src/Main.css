@@ -254,7 +254,49 @@ a{
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen  and (max-width: 767px) {
+    .navbar-nav {
+    justify-content: flex-end; /* Reset justify-content for larger screens */
+    margin-top: 0; /* Reset margin */
+  }
+  .navbar-toggler {
+    z-index: 1000; /* Ensure toggler is above other elements */
+    position: relative; /* Adjust positioning */
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    top: 100%; /* Position dropdown menu below navbar */
+    left: 0;
+    z-index: 999; /* Ensure it's above other content */
+    background-color: #131415; /* Adjust background color */
+    width: 100%; /* Take full width */
+    display: none; /* Hide by default */
+  }
+
+  .navbar-collapse.show {
+    display: block; /* Show when toggled */
+  }
+
+
+  .nav-item {
+    position: static;
+    padding-right: 20px; /* Adjust spacing between navigation items */
+  }
+
+  .first-text,
+  .second-text p {
+    text-align: center; /* Align text to the right */
+    font-size: 22px; /* Adjust font size for larger screens */
+  }
+
+  .img-container img {
+    right: -60px; /* Adjust image position */
+    bottom: -170px;
+  }
+}
+@media screen  and (min-width: 375px ) and (max-width:380px) {
+
   .navbar-nav {
     justify-content: flex-end; /* Reset justify-content for larger screens */
     margin-top: 0; /* Reset margin */
@@ -285,18 +327,75 @@ a{
   }
 
   .first-text,
-  .second-text p,
-  .icon a {
-    text-align: right; /* Align text to the right */
-    font-size: 25px; /* Adjust font size for larger screens */
+  .second-text p {
+    position: relative;
+    text-align: center; /* Align text to the right */
+    font-size: 18px; /* Adjust font size for larger screens */
+    top:-320px;
+  }
+  .icon a{
+     position: relative;
+     top:-25px;
+     left:70px;
   }
 
   .img-container img {
-    right: -60px; /* Adjust image position */
-    bottom: -30px;
+    right: -80px; /* Adjust image position */
+    bottom: -100px;
+    width:220px;
   }
 }
   
+@media screen  and (min-width: 360px ) and (max-width:380px) {
+
+  .navbar-nav {
+    justify-content: flex-end; /* Reset justify-content for larger screens */
+    margin-top: 0; /* Reset margin */
+  }
+  .navbar-toggler {
+    z-index: 1000; /* Ensure toggler is above other elements */
+    position: relative; /* Adjust positioning */
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    top: 100%; /* Position dropdown menu below navbar */
+    left: 0;
+    z-index: 999; /* Ensure it's above other content */
+    background-color: #131415; /* Adjust background color */
+    width: 100%; /* Take full width */
+    display: none; /* Hide by default */
+  }
+
+  .navbar-collapse.show {
+    display: block; /* Show when toggled */
+  }
+
+
+  .nav-item {
+    position: static;
+    padding-right: 20px; /* Adjust spacing between navigation items */
+  }
+
+  .first-text,
+  .second-text p {
+    position: relative;
+    text-align: center; /* Align text to the right */
+    font-size: 18px; /* Adjust font size for larger screens */
+    top:-320px;
+  }
+  .icon a{
+     position: relative;
+     top:-25px;
+     left:70px;
+  }
+
+  .img-container img {
+    right: -80px; /* Adjust image position */
+    bottom: -100px;
+    width:220px;
+  }
+}
   
   
   

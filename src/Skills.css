@@ -57,11 +57,11 @@
 
     .Skill1 li,
     .Skill2 li {
-        right:-20px; /* Remove the right positioning */
+        right:-3px; /* Remove the right positioning */
         text-align:justify; /* Center the text */
         bottom: -30px; /* Adjust as needed for positioning */
         padding-bottom: 10px;
-    
+        
     }
 }
 @media screen  and (min-width: 360px ) and (max-width:380px) {
@@ -74,12 +74,9 @@
 
     .Skill1 li,
     .Skill2 li {
-        right:-20px; /* Remove the right positioning */
-        text-align:justify; /* Center the text */
         bottom: -30px; /* Adjust as needed for positioning */
         padding-bottom: 10px;
         font-size: 10px;
     
     }
   }
-  
